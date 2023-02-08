@@ -88,6 +88,7 @@ const calculator = {
         const title = document.getElementsByClassName('title')[0];
         if(title instanceof HTMLParagraphElement){
             title.addEventListener('click', () => {
+                gtag('event', 'Jump Source Code');
                 window.open('https://github.com/AquaChocomint/KineticCycleCalculator', '_blank');
             });
         }
