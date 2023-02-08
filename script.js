@@ -45,6 +45,8 @@ const calculator = {
         }
 
         output.value = isNaN(count) ? 'Invalid Date' : String(Math.ceil(count));
+
+        gtag('event', 'Calculate');
     },
 
     setStartCurrentTime: function () {
@@ -55,6 +57,8 @@ const calculator = {
         document.getElementById('start-day').value = String(date.getDate());
         document.getElementById('start-hour').value = String(date.getHours());
         document.getElementById('start-minute').value = String(date.getMinutes());
+
+        gtag('event', 'Set Start Current Time');
     },
 
     setEndCurrentTime: function () {
@@ -65,6 +69,8 @@ const calculator = {
         document.getElementById('end-day').value = String(date.getDate());
         document.getElementById('end-hour').value = String(date.getHours());
         document.getElementById('end-minute').value = String(date.getMinutes());
+
+        gtag('event', 'Set End Current Time');
     },
 
     setButtonListener: function () {
