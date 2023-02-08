@@ -6,6 +6,17 @@ body {
     text-align: right;
 }
 
+.title {
+    cursor: pointer;
+    font-family: Helvetica, system-ui;
+    font-size: 17px;
+    margin: 7px;
+}
+
+.title:hover {
+    text-decoration: underline;
+}
+
 table.table-default-style {
     background-color: #FAFFDD;
     width: 100%;

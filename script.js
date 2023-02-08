@@ -82,9 +82,19 @@ const calculator = {
 
         const setStartButton = document.getElementById('update-time-start');
         setStartButton.addEventListener('click', () => calculator.setStartCurrentTime());
+    },
+
+    setTitleListener: function () {
+        const title = document.getElementsByClassName('title')[0];
+        if(title instanceof HTMLParagraphElement){
+            title.addEventListener('click', () => {
+                window.open('https://github.com/AquaChocomint/KineticCycleCalculator', '_blank');
+            });
+        }
     }
 };
 
 window.addEventListener('load', () => {
     calculator.setButtonListener();
+    calculator.setTitleListener();
 });
