@@ -1,0 +1,37 @@
+body {
+    background-color: #e8fac3;
+}
+
+.align-right {
+    text-align: right;
+}
+
+table.table-default-style {
+    background-color: #FAFFDD;
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+table.table-default-style td, table.table-default-style th {
+    border: 1px solid #D3B9FF;
+    padding: 4px 8px;
+}
+
+table.table-default-style tbody td {
+    font-size: 13px;
+}
+
+table.table-default-style tr:nth-child(even) {
+    background: #E0F5DC;
+}
+
+table.table-default-style thead {
+    background: #F5FB9D;
+}
+
+table.table-default-style thead th {
+    font-size: 13px;
+    font-weight: normal;
+    text-align: center;
+}
